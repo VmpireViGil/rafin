@@ -1,5 +1,5 @@
 var passwords = ['Knock!', 'Hola!', 'Welcome!', 'Konnichiwa!', 'Did you knock?', 'Did you bring Pizza?', 'You got me!', 'Hello World!', 'Mew?', 'Bonjour!', 
-		 'Successul!', 'Is it you?', 'Genius!', 'stop! xD', 'password?', 'looking for me?', 'BRING ME THANOS!', 'Best of luck!', 'Stop staring!'];
+		 'Successful!', 'Is it you?', 'Genius!', 'stop! xD', 'password?', 'looking for me?', 'BRING ME THANOS!', 'Best of luck!', 'Stop staring!'];
 var indexOld;
 var index = Math.floor((Math.random() * passwords.length));
 var password = passwords[index];
