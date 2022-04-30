@@ -1,0 +1,124 @@
+﻿@font-face {
+    font-family: jetbrainsmono;
+    src: url("font.ttf");
+}
+
+body {
+    font-family: jetbrainsmono;
+    background-color: #111;
+    background: #111;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.info {
+    margin: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.blink {
+    -webkit-animation: blink 0.8s steps(1, start) infinite alternate;
+            animation: blink 0.8s steps(1, start) infinite alternate;
+}
+
+.password {
+    font-size: 60px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background-image: -webkit-linear-gradient(92deg, #28313b, #485461);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+.button {
+    background-color: #111;
+    border: solid 1px #888;
+    padding: 8px 25px;
+    font-size: 26px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    width: 300px;
+}
+
+.granted {
+    margin-top: 20px;
+    font-size: 30px;
+    width: 35%
+}
+
+.contact {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.rerun {
+    margin-top: 20px;
+    bottom: 80%;
+}
+
+/* copied from stackoverflow cause i am lazy */
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.tab {
+    text-align: left;
+    background: rgb(80, 78, 78);
+    border-radius: 12px;
+    padding: 20px;
+    width: 65%;
+    margin: 30px;
+}
+
+.tab .headline {
+    font-size: 40px;
+}
+
+.tab .list {
+    color:#ddd;
+    font-size: 25px;
+    padding: 8px;
+}
+
+.success-color {
+    color: greenyellow;
+}
+
+/* animations */
+@-webkit-keyframes blink {
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+@keyframes blink {
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+/* idk copied from some random site */
+@-webkit-keyframes hue {
+    50% {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    100% {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+}
